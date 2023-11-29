@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <section>
+        <p>Datalist</p>
+        <fieldset>
+            <label for="imputLista">AÑO</label>
+            <input list="Listaaños" name="inputLista">
+            <datalist id="Listaaños">
+                <option value="2019">
+                <option value="2020">
+                <option value="2021">
+                <option value="2022">
+            </datalist>
+        </fieldset>
+    </section>
+    <section>
+        <p>Output</p>
+        <fieldset>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)">
+                <div>
+                    <input type="number" name="a" value="1" />
+                    <input type="range" name="b" value="2" />
+                    <input type="number" name="c" value="3" />
+                    <input type="number" name="d" value="4" />
+
+                </div>
+                El resultado es:
+                <output name="result"></output>
+            </form>
+        </fieldset>
+    </section>
+        <section>
+        <p>Number</p>
+        <fieldset>
+            <label for="tentacles">Cuantos años tienes:</label>
+            <input type="number" id="tentacles" name="tentacles" min="1" max="80" />
+        </fieldset>
+    </section>
+
+    <section>
+        <p>Range</p>
+        <fieldset>
+            <label for="range">Rangos</label>
+            <input type="range" list="listanums" step="1" name="range" max="6" min="0">
+
+
+            <datalist id="listanums">
+                <option value="0" label="cero">
+                <option value="1" label="uno">
+                <option value="2" label="dos">
+                <option value="3" label="tres">
+                <option value="4" label="cuatro">
+                <option value="5" label="cinco">
+            </datalist>
+        </fieldset>
+    </section>
+        <section>
+        <p>Telefono</p>
+        <fieldset>
+            <a href="tel:+7226798999">+7226798999</a>
+        </fieldset>
+    </section>
+
+    <section>
+        <p>Email</p>
+        <fieldset>
+            <input type="email" value="ejemplo@email.com"></a>
+        </fieldset>
+    </section>
+
+    <section>
+        <p>Color</p>
+        <fieldset>
+                <p style="color:#FF0000";>Ejemplo para la propiedad de color, este texto deberá mostrarse en color rojo.</p>
+        </fieldset>
+    </section>
+        <section>
+        <p>Search</p>
+        <fieldset>
+            <form action="https://www.google.com/buscar" method="get">
+                <label for="buscar">Introduce el texto de lo que deseas buscar:</label>
+                <input type="text" id="buscar" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </fieldset>
+    </section>
+        <section>
+        <p>Date</p>
+        <fieldset>
+            <label for="date">Fecha:</label>
+            <input type="date" id="date">
+        </fieldset>
+    </section>
+
+
+    <section>
+        <p>DateTime</p>
+        <fieldset>
+            <label for="datetime">Fecha y Hora:</label>
+            <input type="datetime-local" id="datetime">
+        </fieldset>
+    </section>
+        <section>
+        <p>DateTime-Local</p>
+        <fieldset>
+            <label for="datetimeLocal">Fecha y Hora:</label>
+            <input type="datetime-local" id="datetimeLocal">
+        </fieldset>
+    </section>
+        <section>
+        <p>Month</p>
+        <fieldset>
+            <label for="month">Mes:</label>
+            <input type="month" id="month">
+        </fieldset>
+    </section>
+
+    <section>
+        <p>Time</p>
+        <fieldset>
+            <label for="hour">Hora:</label>
+            <input type="time" id="hour">
+        </fieldset>
+    </section>
+
+    <section>
+        <p>Week</p>
+        <fieldset>
+            <label for="week">Semana:</label>
+            <input type="week" id="week">
+        </fieldset>
+    </section>
+
+</body>
+
+</html>
