@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+	<form onSubmit="enviar()">
+    <section>
+        <p>Datalist</p>
+        <fieldset>
+            <label for="imputLista">Lista de Colores</label>
+            <input list="Listacolores" name="inputLista" id="color">
+            <datalist id="Listacolores">
+                <option value="Azul">
+                <option value="Amarillo">
+                <option value="Negro">
+                <option value="Blanco">
+            </datalist>
+        </fieldset>
+    </section>
+    <section>
+        <p>Url input</p>
+        <fieldset>
+            <label for="url">Lista urls</label>
+            <input type="url" id="url" placeholder="https://example.com" pattern="https://example.com"
+                size="30" list="listaurls" required name="url">
+            <datalist id="listaurls">
+                <option value="https://www.google.com" label="by google"></option>
+                <option value="https://www.msn.com" label="by ms"></option>
+            </datalist>
+        </fieldset>
+    </section>
+    <section>
+        <p>Range</p>
+        <fieldset>
+            <label for="range">Rangos</label>
+            <input type="range" list="listanums" step="1" name="range" max="6" min="0" id="range">
+	        <datalist id="listanums">
+	            <option value="0" label="cero">
+	            <option value="1" label="uno">
+	            <option value="2" label="dos">
+	            <option value="3" label="tres">
+	            <option value="4" label="cuatro">
+	            <option value="5" label="cinco">
+	        </datalist>
+	    </fieldset>
+    </section>
+    <br>
+    <input type="submit" name="btn_enviar" value="Enviar">
+    <input type="reset" name="btn_limpiar" value="Limpiar">
+</form>
+</body>
+<script>
+	function enviar() {
+		alert("Se a enviado correctamente")
+	}
+</script>
+</html>
