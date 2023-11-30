@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      tr{border-style: solid;}
+      th{border-style: solid;}
+      td{border-style: solid;}
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <fieldset style="width:500px">
+      <legend>Datos básicos</legend>
+      <section>
+        <p>Nombre</p>
+        <input type="text" id="name" />
+      </section>
+      <section>
+        <p>Descripción</p>
+        <textarea name="" id="descripcion" cols="20" rows="3"></textarea>
+      </section>
+      <br />
+      <label for="inputFile"
+        >Foto <input type="file" name="Seleccionar archivo" id="inputFile"
+      /></label>
+      <br />
+      <input type="checkbox" name="inputCheck" id="inputCheck" /><label for="inputCheck"
+        >Añadir contador de visitas</label
+      >
+    </fieldset>
+    <fieldset style="width:500px">
+      <legend>Datos Economicos</legend>
+      <label for="inputPrice"
+        >Precio<input type="number" name="" id="inputPrice" max="999" />$</label
+      ><label for="inputSelect">
+        impuestos
+        <select name="options" id="inputSelect">
+          <option>4%</option>
+          <option>5%</option>
+          <option>6%</option>
+        </select></label
+      >
+      <p>Promocion</p>
+      <input type="radio" name="opB" id="opB1"/>
+      <label for="opB1">Ninguno</label><br />
+      <input type="radio" name="opB" id="opB2"/><label for="opB2">Transporte gratuito</label>
+      <input type="radio" name="opB" id="opB3"/><label for="opB3">Descuento 5%</label>
+      <br/>
+    </fieldset>
+    <p>Análisis de ventan anuales</p>
+    <table
+      style=" border-style: solid;"
+      data-anho="3"
+      data-no-producto="4"
+      data-table-nombre="Analisis de ventan anuales"
+      data-product-nombres="A,B,C,D"
+      id="table">
+      <thead>
+        <tr>
+          <th rowspan="2">Año</th>
+          <th colspan="4">Expansion de ventas</th>
+        </tr>
+        <tr>
+          <th>Producto A</th>
+          <th>Producto B</th>
+          <th>Producto C</th>
+          <th>Producto D</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>N-3</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>N-2</td>
+          <td>3</td>
+          <td>5</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>N-1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>7</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>N</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Año</td>
+          <th>Producto A</th>
+          <th>Producto B</th>
+          <th>Producto C</th>
+          <th>Producto D</th>
+        </tr>
+        <tr >
+          <td colspan="4">Expansion de ventas</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
